@@ -1,0 +1,86 @@
+// 分页
+.locus-page{
+    .key-first,.key-prev,.key-next,.key-last,
+    .key-first-dis,.key-prev-dis,.key-next-dis,.key-last-dis{
+        margin: 0 1px;
+        text-decoration: none;
+        vertical-align: middle;
+
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+        background-color: #f9f9f9;
+        color: #666666;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        padding: 0 14px;
+        cursor: pointer;
+        b{
+            font-weight: normal;
+        }
+        &:hover{
+            border: 1px solid #337AB7;
+            //background-color: #ff7f00;
+            color: #222222;
+            //box-shadow: 0 0 3px #cc6600;
+            //color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+    .key-first-dis,.key-prev-dis,.key-next-dis,.key-last-dis,
+    .key-first-dis:hover,.key-prev-dis:hover,.key-next-dis:hover,.key-last-dis:hover{
+        border: 1px solid #cccccc;
+        background-color: #f9f9f9;
+        color: #cccccc;
+        cursor: default;
+        box-shadow: none;
+    }
+
+    .rank{
+        margin: 0px 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rank-c{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .ellipsis-rank{
+        margin: 0px 5px;
+    }
+    .key-rank,.key-rank-view{
+        display: inline-block;
+        margin: 0 1px;
+        text-decoration: none;
+        vertical-align: middle;
+
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+        background-color: #f9f9f9;
+        color: #666666;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        text-align: center;
+        padding: 0 14px;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid #337AB7;
+            //background-color: #ff7f00;
+            color: #222222;
+            text-decoration: none;
+        }
+    }
+    .key-rank-view,.key-rank-view:hover{
+        cursor: default;
+        border: 1px solid #236AA7;
+        background-color: #337AB7;
+        box-shadow: none;
+        color: #FFFFFF;
+    }
+}

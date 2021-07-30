@@ -1,0 +1,121 @@
+.date-picker{
+    z-index: 11001;
+    position: absolute;
+    width: 280px;
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    color: #333333;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    .color1{
+        color: #999999;
+    }
+    .bg1{
+        background-color: #FFC834;
+    }
+    .cc{
+        position: relative;
+        width: 100%;
+    }
+    .close{
+        position: absolute; cursor: pointer;
+        line-height: 28px; font-size: 16px; text-align: center;
+        width: 30px; height: 31px;
+        right: -30px; top: -1px;
+        background-color: #DDDDDD;
+        &:before{
+            content: 'x'; font-family: '微软雅黑';
+        }
+    }
+    .head{
+        overflow: hidden;
+        height: 29px; border-bottom: 1px solid #DDDDDD; border-right: 1px solid #DDDDDD;
+    }
+    .w1{
+        width: 50%; float: left; display: block;
+        height: 100%;
+        text-align: center;
+    }
+    .fn1, .fn2{
+        display: inline-block; width: 16px; vertical-align: text-top;
+        cursor: pointer; height: 28px; line-height: 28px;
+    }
+    .fn1:before{
+        content: '<';
+    }
+    .fn2:before{
+        content: '>';
+    }
+    .txt1{
+        display: inline-block; vertical-align: text-top;
+        padding: 0 6px; cursor: pointer; height: 28px; line-height: 28px;
+    }
+    .fn1:hover, .fn2:hover, .txt1:hover{
+        color: #F5929D;
+    }
+    .ccc{
+        position: relative;
+        height: 210px; overflow: hidden;
+    }
+    .l2{
+        height: 30px;
+    }
+    .b1, .b2{
+        display: block;
+        float: left; width: 39px; height: 29px; line-height: 28px; text-align: center;
+        border-bottom: 1px solid #DDDDDD; border-right: 1px solid #DDDDDD;
+    }
+    .b1{
+        font-weight: 700;
+    }
+    .b2{
+        cursor: pointer;
+        &:hover{
+            background-color: #F5C2CD;
+        }
+    }
+    .fl-day, .fl-month, .fl-year{
+        display: none;
+    }
+    .for-day .fl-day, .for-month .fl-month, .for-year .fl-year{
+        display: block;
+    }
+
+    .btns{
+        overflow: hidden;
+        height: 29px; border-bottom: 1px solid #DDDDDD;
+    }
+
+    .b3{
+        width: 55px; float: left; display: block;
+        height: 41px; cursor: pointer;
+        line-height: 40px; text-align: center;
+        border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD;
+    }
+
+    .b4{
+        width: 69px; float: left; display: block;
+        height: 69px; cursor: pointer;
+        line-height: 68px; text-align: center;
+        border-right: 1px solid #DDDDDD; border-bottom: 1px solid #DDDDDD;
+    }
+
+    .b5,.b6{
+        width: 55px; float: left; display: block;
+        height: 100%; cursor: pointer;
+        line-height: 28px; text-align: center;
+        border-right: 1px solid #DDDDDD;
+        background-color: #FFFFFF;
+    }
+    .b6{
+        background-color: #F5F2ED;
+    }
+
+    .b6:hover, .b5:hover, .b4:hover, .b3:hover{
+        background-color: #F5C2CD;
+    }
+}

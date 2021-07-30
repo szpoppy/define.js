@@ -1,0 +1,70 @@
+// 下拉筛选
+.combo-box{
+    @border-color:#D2D6DE;
+    @bcolor: lighten(@border-color, 10%);
+    @color-info:#00C0EF;
+    @color-success:#00A65A;
+
+
+    outline: none;
+    display: none;
+    //top:20%; left: 20%; width: 400px;
+    position: absolute;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.1);
+    background-color: #FFFFFF;
+    border: 1px solid @bcolor;
+    border-top: 2px solid @color-info;
+    z-index: 1000;
+    .rel{
+        position: relative;
+        &:after{
+            display: block; height: 1px; background-color: #FFFFFF;
+            content: '';
+            position: absolute;  z-index: 2; left: 0; right: 0; bottom: 0;
+        }
+    }
+    .searchbar{
+        padding: 8px;
+    }
+    .ipt{
+        //.su-ipt-right;
+        .fa:hover{
+            color: @color-info; cursor: pointer;
+        }
+    }
+    .li{
+        //.su-ellipsis;
+        padding: 6px 0;
+        position: relative;
+        cursor: pointer;
+        border-bottom: 1px solid @bcolor;
+        span{
+            padding-left: 10px;
+            padding-right: 23px;
+            line-height: 20px;
+        }
+        &:hover{
+            background-color: lighten(@color-info, 50%);
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .active{
+        background-color: rgba(0,0,0,.05);
+    }
+    .checked{
+        //.su-fa;
+        display: block;
+        text-align: left;
+        &:before{
+            position: absolute; right: 6px; top: 6px;
+            line-height: 20px;
+            content: "\f00c";
+            color:@color-success;
+        }
+    }
+    .elect{
+        max-height: 300px; overflow: auto;
+    }
+}

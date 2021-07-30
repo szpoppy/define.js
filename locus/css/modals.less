@@ -1,0 +1,44 @@
+@import "../../../less/lib/_fns.less";
+// 对话框 modals
+.locus-modals{
+    border-radius: 3px;
+    width: 354px; position: absolute; background-color: #FFFFFF; overflow: hidden; outline: none;
+    .modals_cc{
+        position: relative;
+    }
+    .modals_close{
+        //.icon-close-modals;
+        position: absolute; right: 8px; top: 7px; color: @font-color; z-index: 9;
+        font-size: 20px; width: 20px; height: 20px;
+    }
+    .modals_t{
+        text-align: center;
+        padding: 6px 12px;
+        font-size: 14px;
+        position: relative;
+    }
+    .modals_c{
+        padding: 22px 12px; line-height: 20px; color: #333333; text-align: center;
+    }
+
+    .modals_c_b1{
+        text-align: center;
+        padding: 12px 0;
+        .modals_btn{
+            //.x-btn;
+            text-align: center; width: 140px;
+            display: block!important; margin: 0 auto;
+        }
+    }
+    .modals_c_b2{
+        position: relative; height: 48px;
+        .modals_btn[kite="btn_ok"]{
+            //.x-btn;
+            position: absolute; left: 50%; margin-left: -140px; width: 130px;
+        }
+        .modals_btn[kite="btn_cancel"]{
+            //.x-btn2;
+            position: absolute; left: 50%; margin-left: 10px; width: 130px;
+        }
+    }
+}
